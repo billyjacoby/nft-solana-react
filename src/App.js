@@ -9,6 +9,7 @@ import { OuterContainer, Container } from "./styles/common";
 import { Header } from "./components/Header";
 
 function App() {
+  // eslint-disable-next-line no-unused-vars
   const [network, setNetwork] = useState("mainnet-beta");
   return (
     <WalletConnectionProvider network={network}>
@@ -16,8 +17,7 @@ function App() {
         <OuterContainer>
           <Header />
           <Container className="App">
-            <h1>This is an app</h1>
-            <NFTContainer />
+            <NFTContainer network={network} />
           </Container>
         </OuterContainer>
       </WalletModalProvider>
