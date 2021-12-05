@@ -20,7 +20,7 @@ So onto the tutorial! We'll be building this application on the `create-react-ap
 
 After getting our app setup by running `npx create-react-app` we'll begin by installing all of the packages we'll be using. I personally am still a `yarn` fan, but any of the `yarn` commands can usually be swapped out with `npm` if that's your jam. These can all be installed in one shot by typing the following:
 
-```
+```bash
 yarn add @solana/web3.js \
 @metaplex/js \
 @solana/wallet-adapter-base \
@@ -39,7 +39,7 @@ The last thing we have to do before we get coding is to strip down the files pro
 In the source folder you can remove all the files except for `App.js` and `index.js`, and go ahead and remove all the other references from these files. You should be left with the following:
 
 **index.js**
-```
+```javascript
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
@@ -53,7 +53,7 @@ ReactDOM.render(
 ```
 
 **App.js**
-```
+```javascript
 function App() {
   return (
           <div>
